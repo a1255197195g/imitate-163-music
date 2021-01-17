@@ -22,20 +22,11 @@
     <div class="main">
         <div class="aside-menu">
             <div class="part">
-<<<<<<< HEAD
                 <ul>
                     <li v-for="(item, index) in menuNavList" 
                         @click="toMenu(item, index)"
                         :class="item.isSelect?'select':''"
                         :key="item.id">{{item.name}}</li>
-=======
-                <h2>发现音乐</h2>
-                <ul>
-                    <li>视频</li>
-                    <li>朋友</li>
-                    <li>直播</li>
-                    <li>私人FM</li>
->>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
                 </ul>
             </div>
             <div class="part my-music">
@@ -75,7 +66,6 @@ export default {
     name : '', 
     data(){
         return {
-<<<<<<< HEAD
             menuNavList: [
                 {
                     id: 1,
@@ -116,11 +106,6 @@ export default {
             item.isSelect = true;
             this.$router.push(item.path);
         },
-=======
-        }
-    },
-    methods: {
->>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
         /**
          * 开启小窗口模式
          */

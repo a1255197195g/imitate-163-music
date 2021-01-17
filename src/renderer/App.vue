@@ -43,13 +43,10 @@ li {
   list-style: none;
 }
 
-<<<<<<< HEAD
 a {
   color: #333;
   text-decoration: none;
 }
-=======
->>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
 
 
   /* CSS */
