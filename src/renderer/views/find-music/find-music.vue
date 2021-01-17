@@ -15,7 +15,27 @@
             </li> 
         </ul>
     </div>
+<<<<<<< HEAD
     <router-view></router-view>
+=======
+    <div class="carousel-field">
+        <el-carousel :interval="4000" type="card" height="180px">
+            <el-carousel-item v-for="item in 6" :key="item">
+            </el-carousel-item>
+         </el-carousel>
+    </div>
+    <div class="recommend-list-field">
+        <h3>推荐歌单 ></h3>
+        <ul>
+            <li class="recommend-item" v-for="(item) in recommendList" :key="item.id">
+                <div class="img">
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <p class="detail">{{item.name}}</p>
+            </li>
+        </ul>
+    </div>
+>>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
 </div>
 </template>
 <script>
@@ -28,40 +48,118 @@ data(){
          {
              id: 1,
              name: "个性推荐",
+<<<<<<< HEAD
              isSelect: true,
              path: "/findMusic/personalRecommend"
+=======
+             isSelect: true
+>>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
          },
          {
              id: 2,
              name: "歌单",
+<<<<<<< HEAD
              isSelect: false,
              path: "/findMusic/musicList"
+=======
+             isSelect: false
+>>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
          },
          {
              id: 3,
              name: "主播电台",
+<<<<<<< HEAD
              isSelect: false,
              path: "/findMusic/radioAnchor"
+=======
+             isSelect: false
+>>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
          },
          {
              id: 4,
              name: "排行榜",
+<<<<<<< HEAD
              isSelect: false,
              path: "/findMusic/musicRank"
+=======
+             isSelect: false
+>>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
          },
          {
              id: 5,
              name: "歌手",
+<<<<<<< HEAD
              isSelect: false,
              path: "/findMusic/singer"
+=======
+             isSelect: false
+>>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
          },
          {
              id: 6,
              name: "最新音乐",
+<<<<<<< HEAD
              isSelect: false,
              path: "/findMusic/latestMusic"
          },
          
+=======
+             isSelect: false
+         },
+         
+     ],
+     recommendList: [
+         {
+             id: 1,
+             name: "每日歌曲推荐",
+             img: ""
+         },
+         {
+             id: 2,
+             name: "等雨停 等风止 等故事再开始",
+             img: ""
+         },
+         {
+             id: 3,
+             name: "走新旋律叫醒你东面的耳朵 | 硬地原创123456",
+             img: ""
+         },
+         {
+             id: 4,
+             name: "今天从《恨爱交加》听起 | 私人雷达",
+             img: ""
+         },
+         {
+             id: 5,
+             name: "【永远Beyond 永远黄家驹】",
+             img: ""
+         },
+         {
+             id: 6,
+             name: "时间有泪一香港十大作词人写尽时间酸甜苦辣",
+             img: ""
+         },
+         {
+             id: 7,
+             name: "滚石香港黄金十年",
+             img: ""
+         },
+         {
+             id: 8,
+             name: "【武侠影视金曲100首】每个人心中的武侠梦",
+             img: ""
+         },
+         {
+             id: 9,
+             name: "网易云评论最多的粤语歌TOP50",
+             img: ""
+         },
+         {
+             id: 10,
+             name: "真武侠，永不死。",
+             img: ""
+         }
+>>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
      ]
 }
 },
@@ -71,11 +169,28 @@ methods: {
             item.isSelect = false
         })
         item.isSelect = true;
+<<<<<<< HEAD
         this.$router.push(item.path)
+=======
+>>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
     }
 }
 };
 </script>
 <style lang='scss' scoped>
+<<<<<<< HEAD
 @import "./find-music.scss";
+=======
+@import "./find-music.less";
+
+.el-carousel__item {
+    background-color: #99a9bf;
+    border-radius: 6px;    
+}
+
+.el-carousel__item--card {
+    width: 50%;
+}
+
+>>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
 </style>

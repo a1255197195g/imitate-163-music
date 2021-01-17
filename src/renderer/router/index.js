@@ -20,6 +20,7 @@ export default new Router({
     {
       path: '/findMusic',
       name: 'findMusic',
+<<<<<<< HEAD
       redirect: "/findMusic/personalRecommend",
       component:()=>
         import( '@/views/find-music/find-music.vue' ),
@@ -112,6 +113,20 @@ export default new Router({
       component:()=>{
         return  import('@/views/private-fm/private-fm-list.vue')
       }
+=======
+      component:()=>
+        import( '@/views/find-music/find-music.vue' )
+    },
+    {
+      path: '/music',
+      name: 'music',
+      component: ()=>import('@/views/music')
+    },
+    {
+      path: "/musicDetail",
+      name: 'musicDetail',
+      component:()=>import('@/views/music-detail')
+>>>>>>> cb4c48940edf6a1abfb29106fcfe032c6e830fce
     },
     {
       path: '*',
