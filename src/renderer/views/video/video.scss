@@ -1,0 +1,83 @@
+.video-field {
+    padding: 15px 25px 20px 0;
+    height: 500px;
+    overflow: auto;
+}
+.category-field {
+    display: flex;
+    justify-content: space-between;
+    .left-item {
+        a {
+            border: 1px solid #ddd;
+            font-size: 12px;
+            color: #333;
+            height: 22px;
+            line-height: 22px;
+            border-radius: 11px;
+            width: 84px;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    .right-item {
+        display: flex;
+        font-size: 12px;
+        color: #666;
+        align-items: center;
+        li {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        li:hover {
+            color: #ec4141;
+        }
+    }
+}
+.content-field {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+        margin-bottom: 15px;
+        .img {
+            height: 135px;
+            width: 235px;
+            background-color: #99a9ba;
+            border-radius: 6px;
+            position: relative;
+            .count {
+                position: absolute;
+                right: 8px;
+                top: 3px;
+                color: #fff;
+                font-size: 12px;
+            }
+            .duration {
+                position: absolute;
+                right: 8px;
+                bottom: 4px;
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+        .name {
+            width: 235px;
+            font-size: 14px;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 6px;
+        }
+        .username {
+            width: 235px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #999;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+    }
+}

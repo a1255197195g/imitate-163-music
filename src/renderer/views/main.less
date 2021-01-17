@@ -1,0 +1,86 @@
+.home-field {
+    height: 100%;
+    width: 100%;
+}
+.header-field {
+    height: 60px;
+    background-color: #EC4141;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .header-left {
+        flex:1;
+        h1 {
+            color: #fff;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+    }
+
+    .header-right {
+        -webkit-app-region: no-drag;
+        color: #eee;
+        font-size: 18px;
+        margin-right: 25px;
+        a {
+            margin-left: 15px;
+            cursor: pointer;
+            color: #fff
+        }
+    }
+    
+}
+
+.aside-menu {
+    -webkit-app-region: no-drag;
+    width: 200px;
+    height: 605px;
+    overflow: scroll;
+    border-right: 1px solid #ddd;
+    padding:10px;
+    box-sizing: border-box;
+    .part {
+        ul {
+            li {
+                padding-left: 10px;
+                margin-bottom: 5px;
+                height: 30px;
+                line-height: 30px;
+                color: #333;
+                font-size: 14px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #eee;
+                }
+            }
+            li.select {
+                background-color: #eee;
+                font-weight: bold;
+                font-size: 17px;
+                color: #000;
+            }
+        }
+    }
+
+    .my-music, .my-music-list, .my-music-collect {
+        margin-top: 10px;
+        h3 {
+             background-color: #eee;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+    }
+
+}
+
+.main {
+    display: flex;
+    -webkit-app-region: no-drag;
+}  
+.main .main-content {
+    flex: 1;
+    height: 605px;
+    overflow: auto;
+
+}

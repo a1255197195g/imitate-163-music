@@ -1,0 +1,103 @@
+.singer-field {
+    padding: 10px 25px 0;
+    height: 500px;
+    overflow: auto;
+}
+
+.filter-condition-field {
+    padding: 0px 0 10px ;
+    color: #333;
+    font-size: 12px;
+    .language {
+        display: flex;
+        margin-bottom: 6px;
+        div span {
+            color: #666;
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+            border-right: 1px solid #eee;
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+    .category {
+        display: flex;
+        margin-bottom: 6px;
+        div span {
+            color: #666;
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+            border-right: 1px solid #eee;
+            &:last-child {
+                border: none;
+            }
+        }
+
+    }
+    .filter {
+        display: flex;
+        margin-bottom: 6px;
+        div span {
+            margin-bottom: 10px;
+            color: #666;
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+            border-right: 1px solid #eee;
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+    .title {
+        width: 30px;
+        min-width: 30px;
+        margin-right: 10px;
+    }
+    .language .all,  .category .all , .filter .all{
+        display: inline-block;
+        line-height: 20px;
+        height: 20px;
+        border-radius: 10px;
+        font-size: 11px;
+        width: 60px;
+        text-align: center;
+        color: #EC4141;
+        background-color: #fdf5f5;
+        box-sizing: border-box;
+        // margin: 0 10px;
+    }
+}
+
+.singer-list {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .singer-item {
+        margin-bottom: 20px;
+        .img {
+            width: 130px;
+            height: 130px;
+            background-color: #99A9BF;
+            border-radius: 6px;
+            font-size: 16px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .name {
+            margin-top: 6px;
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+
+    
+        }
+}

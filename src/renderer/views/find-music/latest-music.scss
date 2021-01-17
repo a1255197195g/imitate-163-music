@@ -1,0 +1,219 @@
+
+.last-music-field {
+    padding: 0 25px 20px 0;
+    overflow: auto;
+    height: 500px;
+}
+.option-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    .switch {
+        display: flex;
+        width: 240px;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 12px;
+        border: 1px  solid #ddd;
+        font-size: 12px;
+        color: #333;
+        overflow: hidden;
+        .switch-item {
+            flex: 1;
+            text-align: center;
+            a {
+                display: block;
+                height: 100%;
+                cursor: pointer;
+                color: #333;
+            }
+        }
+        .switch-item.select {
+            background-color: #999;
+            border-radius: 12px;
+            a {
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+
+.category-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 10px;
+    ul {
+        display: flex;
+    }
+    .category-item {
+        a {
+            display: block;
+            margin-right: 25px;
+            font-size: 12px;
+            cursor: pointer;
+            color: #666;
+        }
+        a.select {
+            font-weight: bold;
+            color: #000;
+        }
+    }
+    .play-like {
+        font-size: 12px;
+        .play-all {
+            display: inline-block;
+            height: 24px;
+            line-height: 24px;
+            width: 80px;
+            text-align: center;
+            background-color: #ec4141;
+            color: #fff;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .like-all {
+            display: inline-block;
+            height: 24px;
+            line-height: 24px;
+            width: 80px;
+            text-align: center;
+            border: 1px solid #ccc;
+            color: #333;
+            border-radius: 12px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        
+    }
+    .recommend-all {
+        
+        color: #666;
+        display: flex;
+        align-items: center;
+        .recommend {
+            height: 22px;
+            line-height: 22px;
+            border-radius: 11px;
+            text-align: center;
+            width: 50px;
+            display: inline-block;
+            color: #ec4141;
+            background-color: #fdf5f5;
+            font-size: 12px;
+        }
+        .all {
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            width: 50px;
+            display: inline-block;
+            color: #999;
+            font-size: 12px;
+        }
+        .sep {
+            margin: 0 5px;
+            display: block;
+            height: 10px;
+            width: 1px;
+            background-color: #ddd;
+        }
+    }
+
+}
+
+.music-list {
+    .music-item {
+        padding-left: 10px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        color: #666;
+        font-size: 12px;
+        &:nth-child(2n+1) {
+            background-color: #fafafa;
+        }
+        .img {
+            width: 36px;
+            height: 36px;
+            background-color: #99A9BF;
+            border-radius: 4px;
+        }
+        .left-item {
+            display: flex;
+            align-items: center;
+            div {
+                margin-right: 10px;
+            }
+            .order {
+                margin-right: 15px;
+            }
+            .name {
+                color: #333;
+            }
+        }
+        .right-item {
+            display: flex;
+            align-items: center;
+            color: #999;
+            .duration {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.new-card-field {
+    .new-card-item {
+        display: flex;
+        .date-field {
+            width: 40px;
+            min-width: 40px;
+            p:first-child {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            p:last-child {
+                font-size: 14px;
+                color: #666;
+            }
+            &.new {
+                p:first-child {
+                    font-size: 14px;
+                    color: #666
+                }
+            }
+        }
+        .content-field {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li {
+                margin-bottom: 20px;
+                .img {
+                    height: 170px;
+                    width: 170px;
+                    background-color: #99A9BF;
+                    border-radius: 6px;
+                }
+                .name {
+                    margin-top: 8px;
+                    width: 170px;
+                    font-size: 14px;
+                    color: #333;
+                }
+                .username {
+                    width: 170px;
+                    font-size: 12px;
+                    margin-top: 3px;
+                    color: #666;
+                }
+            }
+        }
+    }
+    
+}

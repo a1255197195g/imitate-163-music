@@ -1,0 +1,83 @@
+.radio-anchor-field {
+    padding: 20px 25px 20px 0;
+    height: 500px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+
+.menu-button-field {
+    overflow: hidden;
+    margin: 10px 20px;
+    ul {
+        display: flex;
+        width: 1280px;
+    }
+    .menu-button-item {
+        display: inline-block;
+        width: 80px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img {
+            width: 46px;
+            height: 46px;
+            border-radius: 23px;
+            background-color: #fdf5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div {
+                font-size: 18px;
+                color: #ee4141;
+            }
+        }
+        .name {
+            font-size: 13px;
+            margin-top: 5px;
+            color: #666;    
+        }
+    }
+}
+
+.radio-item {
+    margin-top: 20px;
+    h3 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-item {
+        margin:15px 0 0;
+        .img {
+            width: 140px;
+            height: 140px;
+            border-radius: 6px;
+            background-color: #99A9BF;
+            position: relative;
+            p.username {
+                position: absolute;
+                bottom: 6px;
+                left: 6px;
+                color: #fff;
+            }
+        }
+        .name {
+            font-size: 14px;
+            color: #333;
+            margin-top: 5px;
+            width: 140px;
+        }
+        .username {
+            margin-top: 3px;
+            font-size: 12px;
+            color: #999;
+            width: 140px;
+        }
+    }
+}

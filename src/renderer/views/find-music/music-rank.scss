@@ -1,0 +1,131 @@
+.music-rank-field {
+    padding: 0px 25px 20px 0;
+    height: 500px;
+    overflow: auto;
+    h3 {
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+
+.grow-rank-field, .new-rank-field, .create-rank-field, .hot-rank-field, .singer-rank-field{
+    display: flex;
+    margin-bottom: 20px;
+    .look-all {
+        font-size: 12px;
+        color: #666;
+        line-height: 34px;
+        a {
+            cursor: pointer;
+        }
+    }
+    .img {
+        height: 170px;
+        width: 170px;
+        border-radius: 6px;
+        background-color: #99A9BF;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        font-size: 28px;
+        .date {
+            font-size: 12px;
+        }
+    }
+    .content {
+        flex: 1;
+        .rank-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            height: 34px;
+            line-height: 34px;
+            padding: 0 10px;
+            .rank {
+                color: #666;
+                margin-right: 5px;
+            }
+            .rate {
+                display: inline-block;
+                color: #666;
+                width: 35px;
+            }
+            .name {
+                color: #000;
+            }
+            .username {
+                color: #666;
+            }
+            .rank-top {
+                color: #EC4141;
+            }
+        }
+        .rank-item:nth-child(2n+1){
+            background-color: #fafafa;
+        }
+        .rank-item:hover {
+            background-color: #eee;
+        }
+        
+        
+    }
+}
+
+.new-rank-field .rank-item, .hot-rank-field .rank-item, .singer-rank-field .rank-item {
+    .group {
+        font-size: 12px;
+        color: #999;
+        margin-right: 5px;
+    }
+    .desc {
+        color: green
+    }
+    .asc {
+        color: #EC4141;
+    }
+}
+
+.create-rank-field .rank-item {
+    .new {
+        color: green;
+        font-size: 10px;
+        width: 30px;
+        display: inline-block;
+    }
+}
+
+.global-rank-field ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.global-rank-field .global-rank-item {
+    margin-bottom: 20px;
+    .img {
+        height: 140px;
+        width: 140px;
+        background-color: #99A9BF;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 18px;
+    }
+    .blank {
+        height: 140px;
+        width: 140px;
+        background-color: #00000000
+    }
+    .name {
+        margin-top: 5px;
+        width: 140px;
+        color: #333;
+        font-size: 12px;
+        text-align: center;
+    }
+
+}

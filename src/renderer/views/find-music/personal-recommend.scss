@@ -1,0 +1,154 @@
+.personal-recommend-field {
+    padding: 0px 25px 20px 0;
+}
+.carousel-field {
+    margin: 20px 0;
+}
+
+.recommend-list-field {
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    ul {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .recommend-item {
+            margin-bottom: 10px;
+            height: 190px;
+            width: 140px;
+            .img {
+                height: 140px;
+                width: 140px;
+                background-color:#99A9BF;
+                border-radius: 6px;
+            }
+            .detail {
+                margin-top: 6px;
+                font-size: 14px;
+                display: -webkit-box;    
+                -webkit-box-orient: vertical;    
+                -webkit-line-clamp: 2;    
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.recommend-mv-field {
+    margin-top: 20px;
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    ul {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .recommend-item {
+            margin-bottom: 10px;
+            height: 190px;
+            width: 245px;
+            .img {
+                height: 135px;
+                width: 245px;
+                background-color:#99A9BF;
+                border-radius: 6px;
+            }
+            .detail {
+                margin-top: 6px;
+                font-size: 14px;   
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .username {
+                font-size: 14px;
+                color: #333;
+            }
+        }
+    }
+}
+
+.single-visit-field {
+    margin-top: 20px;
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    ul {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .recommend-item {
+            margin-bottom: 10px;
+            height: 190px;
+            width: 245px;
+            .img {
+                height: 135px;
+                width: 245px;
+                background-color:#99A9BF;
+                border-radius: 6px;
+            }
+            .detail {
+                margin-top: 6px;
+                font-size: 14px;
+                display: -webkit-box;    
+                -webkit-box-orient: vertical;    
+                -webkit-line-clamp: 2;    
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.latest-music-field {
+    margin-top: 20px;
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    ul {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .recommend-item {
+            margin-bottom: 10px;
+            height: 50px;
+            width: 245px;
+            display: flex;
+            color: #333;
+            font-size: 14px;
+            .img {
+                height: 50px;
+                min-width: 50px;
+                width: 50px;
+                background-color:#99A9BF;
+                border-radius: 6px;
+                margin-right: 5px;
+            }
+
+            .detail{
+                width: 190px;
+                margin-top: 3px;
+                font-size: 14px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .username  {
+                margin-top: 3px;
+                font-size: 12px;
+                width: 190px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    }  
+}
