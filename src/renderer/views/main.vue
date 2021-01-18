@@ -4,7 +4,7 @@
  * @Autor: in hengqi by mengze 
  * @Date: 2021-01-13 18:57:24
  * @LastEditors: in hengqi by mengze
- * @LastEditTime: 2021-01-15 17:41:55
+ * @LastEditTime: 2021-01-18 19:26:42
 -->
 <template>
 <div class='home-field'>
@@ -13,6 +13,8 @@
             <h1>网易云音乐</h1>
         </div>
         <div class="header-right">
+            <img class="avatar" :src="userInfo.avatarUrl" alt="">
+            <span class="nickname">{{userInfo.nickname}}</span>
             <a class="iconfont icon-zuixiaohua" @click="startMiniWindow"></a>
             <a class="iconfont icon-minimum" @click="startMinWindow"></a>
             <a class="iconfont icon-zuidahua" @click="startMaxWindow"></a>
@@ -62,10 +64,13 @@
 </template>
 <script>
 const {ipcRenderer: ipc} = require('electron');
+import storage from '@/storage/storage';
 export default {
     name : '', 
     data(){
         return {
+            userInfo : {
+            },
             menuNavList: [
                 {
                     id: 1,
@@ -100,7 +105,30 @@ export default {
             ]
         }
     },
+    created(){
+        this.userInfo = storage.getItem('userInfo') || this.userInfo;
+        if( !this.userInfo.nickName ){
+            this.autoLogin();
+        }
+    },
+     mounted(){
+      // window.addEventListener('resize', ()=>{
+      //   this.$refs.app.style.width = window.outerWidth;
+      //   this.$refs.app.style.height = window.outerHeight;
+      // })
+    },
+    
     methods: {
+        autoLogin(){
+          //确实不用跨域就能直接请求访问
+          this.$http.get('http://39.108.15.104/login/cellphone?phone=15728136279&password=1255197195').then( (res={}) =>{
+             let data = res.data || {};
+             if( data.code === 200 ){
+                this.userInfo = data.profile; 
+                storage.setItem('userInfo', this.userInf);
+            }
+          })
+        },
         toMenu(item, index){
             this.menuNavList.forEach( item=> item.isSelect = false )
             item.isSelect = true;

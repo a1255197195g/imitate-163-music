@@ -4,7 +4,7 @@
  * @Autor: in hengqi by mengze 
  * @Date: 2021-01-13 10:02:42
  * @LastEditors: in hengqi by mengze
- * @LastEditTime: 2021-01-15 18:22:12
+ * @LastEditTime: 2021-01-18 19:13:31
 -->
 <template>
   <div ref="app" id="app">
@@ -19,11 +19,13 @@ import Main from "./views/main"
     components: {
       Main
     },
-    mounted(){
-      // window.addEventListener('resize', ()=>{
-      //   this.$refs.app.style.width = window.outerWidth;
-      //   this.$refs.app.style.height = window.outerHeight;
-      // })
+    data(){
+      return {
+        
+      }
+    },
+    methods: {
+  
     }
   }
 </script>
